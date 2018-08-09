@@ -1,0 +1,11 @@
+[color]
+	ui = auto
+[user]
+	name = SilasCaimi
+	email = silascaimi@live.com
+[core]
+	editor = subl -n -w
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
