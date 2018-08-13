@@ -1,35 +1,25 @@
 # setting-git
-Default settings and files I use in git
+Default settings and files I use in git to use it with Sublime Text editor
 
-## configure tooling
-
-```
-git config --global user.name "[name]"
-```
+## Configure tooling
 
 ```
-git config --global user.email "[email address]"
+$ git config --global user.name "[name]"
+$ git config --global user.email "[email address]"
+$ git config --global color.ui auto
+$ git config --global push.default upstream
+$ git config --global merge.conflictstyle diff3
 ```
 
-```
-git config --global color.ui auto
-```
+## Configure editor
 
 ```
-git config --global push.default upstream
+$ git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
 ```
 
-```
-git config --global merge.conflictstyle diff3
-```
+* Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`
 
-## configure editor
+* Abrir arquivo `.bash_profile` e adicionar a linha abaixo
 
-```
-git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
-```
-
-abrir arquivo .bash_profile com o sublime text e acrescentar a linha abaixo
-
-*`alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"`*
+*`alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"`*
 
