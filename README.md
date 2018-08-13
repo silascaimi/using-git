@@ -1,6 +1,6 @@
 # setting-git
 
-Default settings and files I use in git to use it with Sublime Text editor
+Default settings and files I use in git to use it with Sublime Text editor.
 
 ## Configure tooling
 
@@ -24,3 +24,6 @@ $ git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_t
 
 *`alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"`*
 
+Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
+
+[packagecontrol]:<https://packagecontrol.io/installation#st3>
