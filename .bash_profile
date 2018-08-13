@@ -16,5 +16,3 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
 export PS1="$IPurple\u$green\$(__git_ps1)$cyan \W $ $reset"
-
-alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
