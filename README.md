@@ -1,4 +1,5 @@
 # setting-git
+
 Default settings and files I use in git to use it with Sublime Text editor
 
 ## Configure tooling
