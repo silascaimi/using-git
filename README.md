@@ -1,35 +1,41 @@
 # setting-git
-Default settings and files I use in git
 
-## configure tooling
+Default settings and files I use in git to use it with Sublime Text editor.
 
-```
-git config --global user.name "[name]"
-```
+## Configure tooling
 
-```
-git config --global user.email "[email address]"
-```
-
-```
-git config --global color.ui auto
+```sh
+$ git config --global user.name "[name]"
+$ git config --global user.email "[email address]"
+$ git config --global color.ui auto
+$ git config --global push.default upstream
+$ git config --global merge.conflictstyle diff3
 ```
 
-```
-git config --global push.default upstream
+## Configure editor
+
+```sh
+$ git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
 ```
 
-```
-git config --global merge.conflictstyle diff3
-```
+* Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`
 
-## configure editor
+* Abrir arquivo `.bash_profile` e adicionar a linha abaixo. 
+
+*`alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"`*
+
+Isto permitirá utilizar o atalho `subl` para abrir arquivos e incluir as mensagens de commit com o Sublime Text com o comando simples de commit
 
 ```
-git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
+$ subl nome_do_arquivo
+$ git commit
 ```
 
 abrir arquivo .bash_profile com o sublime text e acrescentar a linha abaixo
 
 *`alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"`*
 
+Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
+>>>>>>> dff626e83ab600489678c1b9c0a96d6fc3499c9d
+
+[packagecontrol]:<https://packagecontrol.io/installation#st3>
