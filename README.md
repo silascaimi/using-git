@@ -31,5 +31,5 @@ git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_tex
 
 abrir arquivo .bash_profile com o sublime text e acrescentar a linha abaixo
 
-*`alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"`*
+*`alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"`*
 
