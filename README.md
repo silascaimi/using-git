@@ -31,10 +31,6 @@ $ subl nome_do_arquivo
 $ git commit
 ```
 
-abrir arquivo .bash_profile com o sublime text e acrescentar a linha abaixo
-
-*`alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"`*
-
 Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
 >>>>>>> dff626e83ab600489678c1b9c0a96d6fc3499c9d
 
