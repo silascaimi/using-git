@@ -32,6 +32,5 @@ $ git commit
 ```
 
 Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
->>>>>>> dff626e83ab600489678c1b9c0a96d6fc3499c9d
 
 [packagecontrol]:<https://packagecontrol.io/installation#st3>
