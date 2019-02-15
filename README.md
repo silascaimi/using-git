@@ -15,7 +15,7 @@ $ git config --global merge.conflictstyle diff3
 ## Configure editor
 
 ```sh
-$ git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
+$ git config --global core.editor "'C:/Program\\ Files/Sublime\\ Text\\ 3/sublime_text.exe' -n -w"
 ```
 
 * Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`
