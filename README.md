@@ -22,7 +22,7 @@ $ git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text
 
 * Abrir arquivo `.bash_profile` e adicionar a linha abaixo. 
 
-*`alias subl="C:/Program Files/Sublime Text 3/sublime_text.exe"`*
+*`alias subl="'C:/Program Files/Sublime Text 3/sublime_text.exe'"`*
 
 Isto permitirá utilizar o atalho `subl` para abrir arquivos e incluir as mensagens de commit com o Sublime Text com o comando simples de commit
 
