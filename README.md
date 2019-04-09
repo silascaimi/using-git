@@ -1,4 +1,4 @@
-# setting-git
+# Setting-git
 
 Default settings and files I use in git to use it with Sublime Text editor.
 
@@ -17,10 +17,13 @@ $ git config --global merge.conflictstyle diff3
 ```sh
 $ git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -n -w"
 ```
+## Files
 
-* Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`
+Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`
 
-* Abrir arquivo `.bash_profile` e adicionar a linha abaixo. 
+## Shortcut to Sublime
+
+Abrir arquivo `.bash_profile` e adicionar a linha abaixo. 
 
 *`alias subl="'C:/Program Files/Sublime Text 3/sublime_text.exe'"`*
 
@@ -31,6 +34,8 @@ $ subl nome_do_arquivo
 $ git commit
 ```
 
+## Formatting
+
 Se você estiver em uma máquina Windows, isso converte as terminações LF em CRLF quando você faz o check-out do código:
 ```sh
 $ git config --global core.autocrlf true
@@ -39,6 +44,8 @@ Caso esteja usando Linux ou macOs você pode dizer ao Git para converter CRLF pa
 ```sh
 $ git config --global core.autocrlf input
 ```
+
+## Add-on
 
 Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
 
