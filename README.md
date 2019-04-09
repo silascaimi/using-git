@@ -26,9 +26,18 @@ $ git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text
 
 Isto permitirá utilizar o atalho `subl` para abrir arquivos e incluir as mensagens de commit com o Sublime Text com o comando simples de commit
 
-```
+```sh
 $ subl nome_do_arquivo
 $ git commit
+```
+
+Se você estiver em uma máquina Windows, isso converte as terminações LF em CRLF quando você faz o check-out do código:
+```sh
+$ git config --global core.autocrlf true
+```
+Caso esteja usando Linux ou macOs você pode dizer ao Git para converter CRLF para LF no commit:
+```sh
+$ git config --global core.autocrlf input
 ```
 
 Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
