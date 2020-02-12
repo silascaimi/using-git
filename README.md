@@ -49,4 +49,42 @@ $ git config --global core.autocrlf input
 
 Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
 
+## Main Comands
+
+```sh
+$ git init
+$ git clone
+$ git status
+
+$ git log
+$ git log --oneline
+$ git stat
+$ git log -p
+$ git show <SHA>
+
+$ git add <fil1> <file2> <fileN>
+$ git commit
+$ git commit -m # short message
+$ git commit --amend # modifica o ultimo commit
+$ git revert <SHA> # modifica o commit commit
+$ git reset # apaga um commit
+
+$ git diff
+
+$ git rm --cached <file> # to unstage the commit
+
+$ git tag # exibe as tags
+$ git tag -a <nome> # cria a tag 
+$ git tag -d <nome> # deleta a tag
+$ git branch
+$ git branch -d <name> # deleta um branch
+$ git branch sidebar <SHA> # cria um branch de outro branch
+$ git ceckout <nome>
+$ git merge
+
+$ git remote add origin <link>
+$ git push origin master
+$ git pull
+```
+
 [packagecontrol]:<https://packagecontrol.io/installation#st3>
