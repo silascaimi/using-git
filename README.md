@@ -47,7 +47,7 @@ git config --global core.autocrlf input
 
 ## Add-on
 
-Há um [plugin][packagecontrol] que você pode baixar e usar para visualizar arquivos de markdown no computador.
+Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixar e usar para visualizar arquivos de markdown no computador.
 
 ## Initial Config
 
@@ -97,4 +97,3 @@ git push origin master
 git pull
 ```
 
-[packagecontrol]:'https://packagecontrol.io/installation#st3'
