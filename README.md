@@ -70,29 +70,40 @@ git log
 git log --oneline
 git stat
 git log -p
-git show 'SHA'
+git show SHA
 
-git add 'file1' 'file2' 'fileN'
+git add file1 file2 fileN
 git commit
 git commit -m # short message
-git commit --amend # modifica o ultimo commit
-git revert 'SHA' # modifica o commit commit
-git reset # apaga um commit
+git commit --amend    # modifica o ultimo commit
 
+git reset file # unstage arquivo
+git checkout -- file # desfaz alterações no arquivo
+git checkout HEAD~1 # aponta para o último commit
+
+git reset # apaga um commit e mantém alterações
+git reset --hard # apaga um commit e desfaz alterações
+git reset HEAD~1 # apaga um commit e mantém alterações
+git reset --hard HEAD~1 # apaga um commit e desfaz alterações
+
+git revert SHA # desfaz um determinado commit
+
+git rm file # remove arquivo do commit e diretório
+git rm --cached file # remove arquivo do commit e mantém no diretório
+ 
 git diff
 
-git rm --cached 'file' # to unstage the commit
-
 git tag # exibe as tags
-git tag -a 'nome' # cria a tag 
-git tag -d 'nome' # deleta a tag
-git branch
-git branch -d 'name' # deleta um branch
-git branch sidebar 'SHA' # cria um branch de outro branch
-git ceckout 'nome'
-git merge
+git tag -a nome # cria a tag 
+git tag -d nome # deleta a tag
 
-git remote add origin 'link'
+git branch # cria uma branch
+git branch -d nome # deleta um branch
+git branch sidebar SHA # cria um branch de outro branch
+git ceckout nome
+git merge --no-ff nome
+
+git remote add origin link
 git push origin master
 git pull
 ```
