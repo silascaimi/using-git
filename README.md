@@ -44,6 +44,10 @@ Caso esteja usando Linux ou macOs você pode dizer ao Git para converter CRLF pa
 ```sh
 git config --global core.autocrlf input
 ```
+Caso o time esteja em sistemas diferentes é necessário desativar a conversão automática para quebra de linha (Recomendado)
+```sh
+git config --global core.autocrlf false
+```
 
 ## Add-on
 
