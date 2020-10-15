@@ -48,6 +48,7 @@ Caso o time esteja em sistemas diferentes é necessário desativar a conversão 
 ```sh
 git config --global core.autocrlf false
 ```
+Entendendo a quebra de linhas [aqui](https://www.akitaonrails.com/2009/02/23/pequena-dica-de-git-para-windows#:~:text=O%20melhor%20jeito%20de%20usar,problema%20na%20configura%C3%A7%C3%A3o%20padr%C3%A3o%20dele.&text=Para%20quem%20n%C3%A3o%20sabe%20o,10%20(U%2B000A).)
 
 ## Add-on
 
