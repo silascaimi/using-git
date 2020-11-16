@@ -112,6 +112,9 @@ git remote add origin link
 git push origin master
 git pull
 ```
+```sh
+git config --system --unset credential.helper # remove configuração de credenciais armazenadas
+```
 
 ## Git branching model
 
