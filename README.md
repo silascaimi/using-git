@@ -91,10 +91,12 @@ git reset --hard # apaga um commit e desfaz alterações
 git reset HEAD~1 # apaga um commit e mantém alterações
 git reset --hard HEAD~1 # apaga um commit e desfaz alterações
 
-git revert SHA # desfaz um determinado commit
+git revert SHA # cria um novo commit que desfaz um determinado commit
 
 git rm file # remove arquivo do commit e diretório
 git rm --cached file # remove arquivo do commit e mantém no diretório
+
+git rebase -i HEAD~4 # para realizar modificações nos commits
  
 git diff
 
