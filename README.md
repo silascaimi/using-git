@@ -59,9 +59,11 @@ Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixa
 ```sh
 git init
 git remote add origin 'link do repositório no github'
+git branch --set-upstream master origin/master
 git add .
 git commit -m "Initial files"
 git push -u origin master
+git branch --set-upstream master origin/master
 ```
 
 ## Main Comands
@@ -72,10 +74,14 @@ git clone
 git status
 
 git log
-git log --oneline
-git stat
+git log --oneline --graph
 git log -p
+git shortlog
+git shortlog -sne
 git show SHA
+git stat
+
+git remote -v
 
 git add file1 file2 fileN
 git commit
@@ -86,8 +92,8 @@ git reset file # unstage arquivo
 git checkout -- file # desfaz alterações no arquivo
 git checkout HEAD~1 # aponta para o último commit
 
-git reset # apaga um commit e mantém alterações
-git reset --hard # apaga um commit e desfaz alterações
+git reset # remove do staged area e mantém alterações
+git reset --hard # remove do staged area e desfaz alterações
 git reset HEAD~1 # apaga um commit e mantém alterações
 git reset --hard HEAD~1 # apaga um commit e desfaz alterações
 
@@ -98,11 +104,14 @@ git rm --cached file # remove arquivo do commit e mantém no diretório
 
 git rebase -i HEAD~4 # para realizar modificações nos commits
  
-git diff
+git diff SHA1..SHA2
 
 git tag # exibe as tags
-git tag -a nome # cria a tag 
+git tag -a nome # cria a tag com anotação
+git tag -s nome # cria a tag assianda autenticação ssh
+git tag -v nome # verifica uma tag
 git tag -d nome # deleta a tag
+git push --tags # envia tags para o remoto
 
 git branch # cria uma branch
 git branch -d nome # deleta um branch
