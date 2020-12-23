@@ -27,6 +27,12 @@ Abrir arquivo `.bash_profile` e adicionar a linha abaixo.
 
 *`alias subl="'C:/Program Files/Sublime Text 3/sublime_text.exe'"`*
 
+Ou executar o comando
+
+```sh
+git config --global alias.subl "comando" # cria atalho para o comando
+```
+
 Isto permitirá utilizar o atalho `subl` para abrir arquivos e incluir as mensagens de commit com o Sublime Text com o comando simples de commit
 
 ```sh
@@ -64,6 +70,10 @@ git add .
 git commit -m "Initial files"
 git push -u origin master
 git branch --set-upstream master origin/master
+
+git config # aplica configurações no repositório
+git config --global # aplica configurações de usuário
+git config --system # aplica configurações para todos usuários
 ```
 
 ## Main Comands
@@ -75,18 +85,28 @@ git status
 
 git log
 git log --oneline --graph
+git log --oneline --graph --all --decorate
 git log -p
 git shortlog
 git shortlog -sne
 git show SHA
 git stat
+git reflog # log de todos commits (inclui deletados)
 
 git remote -v
 
 git add file1 file2 fileN
 git commit
-git commit -m # short message
+git commit -m "messsage" # short message
+git commit -am "message" # commit all modified files in stage 
 git commit --amend    # modifica o ultimo commit
+
+git stash # salva as mudanças do working directory
+git stash list
+git stash apply
+git stash pop # aplica e remove o stash
+git stash drop # remove o ultimo stash adicionado
+git stash branch name # cria um branch, faz checkout e aplica stash
 
 git reset file # unstage arquivo
 git checkout -- file # desfaz alterações no arquivo
@@ -98,13 +118,13 @@ git reset HEAD~1 # apaga um commit e mantém alterações
 git reset --hard HEAD~1 # apaga um commit e desfaz alterações
 
 git revert SHA # cria um novo commit que desfaz um determinado commit
+git rebase -i HEAD~4 # para realizar modificações nos commits
 
 git rm file # remove arquivo do commit e diretório
 git rm --cached file # remove arquivo do commit e mantém no diretório
-
-git rebase -i HEAD~4 # para realizar modificações nos commits
  
 git diff SHA1..SHA2
+git diff --cached # staging area
 
 git tag # exibe as tags
 git tag -a nome # cria a tag com anotação
@@ -114,9 +134,13 @@ git tag -d nome # deleta a tag
 git push --tags # envia tags para o remoto
 
 git branch # cria uma branch
-git branch -d nome # deleta um branch
-git branch sidebar SHA # cria um branch de outro branch
-git ceckout nome
+git branch -d nome # deleta um branch, use -D para forçar
+git branch -m old_name new_name # renomeia um branch
+git branch sidebar SHA # cria um branch a partir de um commit
+git branch nome SHA # cria um branch para recuperar um commit de branch deletado
+git checkout -b name # cria um branch e faz o checkout
+git checkout nome
+
 git merge --no-ff nome
 
 git remote add origin link
@@ -130,7 +154,7 @@ git config --system --unset credential.helper # remove configuração de credenc
 ## Git branching model
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/9321996/88289855-41f21400-cccc-11ea-910a-7405624c3545.png" width="60%">
+<img src="https://user-images.githubusercontent.com/9321996/88289855-41f21400-cccc-11ea-910a-7405624c3545.png" width="50%">
 </p>
 
 Author: Vincent Driessen
