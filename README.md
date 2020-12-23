@@ -64,7 +64,7 @@ Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixa
 
 ```sh
 git init
-git remote add origin 'link do repositório no github'
+git remote add origin 'link do repositório'
 git branch --set-upstream master origin/master
 git add .
 git commit -m "Initial files"
@@ -140,12 +140,18 @@ git branch sidebar SHA # cria um branch a partir de um commit
 git branch nome SHA # cria um branch para recuperar um commit de branch deletado
 git checkout -b name # cria um branch e faz o checkout
 git checkout nome
+git branch -r # lista branch no remoto
+git push origin :branch_name # deleta o branch no remoto
 
 git merge --no-ff nome
+git merge mergetool
+git cherry-pick SHA # adiciona um commit especifico ao branch
 
-git remote add origin link
-git push origin master
-git pull
+git push
+git push origin branch # envia branch para o remoto
+git push origin branch:new_name # especificando novo nome no remoto
+git fetch origin master # atualiza o repo local
+git pull # git fetch + git merge
 ```
 ```sh
 git config --system --unset credential.helper # remove configuração de credenciais armazenadas
