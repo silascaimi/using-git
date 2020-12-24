@@ -10,6 +10,10 @@ git config --global user.email 'email address'
 git config --global color.ui auto
 git config --global push.default upstream
 git config --global merge.conflictstyle diff3
+
+git config # aplica configurações no repositório
+git config --global # aplica configurações de usuário
+git config --system # aplica configurações para todos usuários
 ```
 
 ## Configure editor
@@ -70,10 +74,6 @@ git add .
 git commit -m "Initial files"
 git push -u origin master
 git branch --set-upstream master origin/master
-
-git config # aplica configurações no repositório
-git config --global # aplica configurações de usuário
-git config --system # aplica configurações para todos usuários
 ```
 
 ## Main Comands
