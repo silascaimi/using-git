@@ -123,6 +123,7 @@ git rebase -i HEAD~4 # para realizar modificações nos commits
 
 git rm file # remove arquivo do commit e diretório
 git rm --cached file # remove arquivo do commit e mantém no diretório
+git rm -r file/folder # remove arquivo/pasta do remoto
  
 git diff SHA1..SHA2
 git diff --cached # staging area
