@@ -162,6 +162,10 @@ ssh-add ~/.ssh/chave # adiciona chave ao agente
 git config --system --unset credential.helper # remove configuração de credenciais armazenadas
 ```
 
+## Guides
+
+[Git rebase](https://raphaelfabeni.com/git-alterando-commits-parte-1/)
+
 ## Git branching model
 
 <p align="center">
