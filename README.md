@@ -162,6 +162,7 @@ git push origin branch # envia branch para o remoto
 git push origin branch:new_name # especificando novo nome no remoto
 git fetch origin master # atualiza o repo local
 git pull # git fetch + git merge
+git pull --rebase # agrupa todas branchs em uma unica linha(indicado)
 
 ssh-keygen -t rsa -b 4096 -C "email"
 eval `ssh-agent -s` # inicial o agent ssh em background
