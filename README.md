@@ -19,7 +19,6 @@ git config --system # aplica configurações para todos usuários
 ## Configure editor
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "email"
 git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -n -w"
 ```
 ## Files
@@ -164,7 +163,7 @@ git fetch origin master # atualiza o repo local
 git pull # git fetch + git merge
 git pull --rebase # agrupa todas branchs em uma unica linha(indicado)
 
-ssh-keygen -t rsa -b 4096 -C "email"
+ssh-keygen -t rsa -b 4096 -C "email" # gera uma chave ssh
 eval `ssh-agent -s` # inicial o agent ssh em background
 ssh-add ~/.ssh/chave # adiciona chave ao agente
 
