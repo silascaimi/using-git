@@ -146,7 +146,14 @@ git branch -r # lista branch no remoto
 git branch --set-upstream-to=origin/<branch> <local_branch> # tracking remote branch com local branch
 git push origin :branch_name # deleta o branch no remoto
 
-git merge --no-ff nome
+## Processo de merge
+### Atualiza a feature com base na master
+$ git checkout feature/do-something
+$ git rebase master
+### Merge feature na master
+$ git checkout master
+$ git merge --no-ff feature/do-something
+
 git merge mergetool
 git cherry-pick SHA # adiciona um commit especifico ao branch
 
