@@ -120,6 +120,13 @@ git reset --hard HEAD~1 # apaga um commit e desfaz alterações
 git revert SHA # cria um novo commit que desfaz um determinado commit
 git rebase -i HEAD~4 # para realizar modificações nos commits
 
+# p, pick = não irá modificar esse commit
+# r, reword = irá manter este commit, porém podemos editar a mensagem
+# e, edit = irá realizar o rebase, mas irá parar nesse commit. Você então poderá realizar novas ações nesse ponto, e, quando terminar, o rebase irá continuar.
+# s, squash = irá juntar o commit com o anterior
+# f, fixup = igual ao squash, porém irá descartar a mensagem deste commit
+# x, exec = podemos rodar um comando do shell nesse commit.
+
 git rm file # remove arquivo do commit e diretório
 git rm --cached file # remove arquivo do commit e mantém no diretório
 git rm -r file/folder # remove arquivo/pasta do remoto
