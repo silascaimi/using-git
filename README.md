@@ -93,7 +93,9 @@ git show SHA
 git stat
 git reflog # log de todos commits (inclui deletados)
 
-git remote -v # lista links remotos
+git remote -v # lista os remotos existentes
+git remote set-url nome_remoto(origin) novo_link # altera o link do remoto
+git remote rm # remove um repositorio remoto
 
 git add file1 file2 fileN
 git commit
