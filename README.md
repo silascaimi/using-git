@@ -151,6 +151,7 @@ git branch nome SHA # cria um branch para recuperar um commit de branch deletado
 git checkout -b name # cria um branch e faz o checkout
 git checkout nome
 git branch -r # lista branch no remoto
+git checkout -b nome_do_branch_local origin/nome_do_branch_remoto # baixar branch remoto
 git branch --set-upstream-to=origin/<branch> <local_branch> # tracking remote branch com local branch
 git push origin :branch_name # deleta o branch no remoto
 
