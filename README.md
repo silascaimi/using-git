@@ -93,7 +93,7 @@ git show SHA
 git stat
 git reflog # log de todos commits (inclui deletados)
 
-git remote -v
+git remote -v # lista links remotos
 
 git add file1 file2 fileN
 git commit
