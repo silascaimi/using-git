@@ -14,6 +14,8 @@ git config --global merge.conflictstyle diff3
 git config # aplica configurações no repositório
 git config --global # aplica configurações de usuário
 git config --system # aplica configurações para todos usuários
+
+git config --unset {DIRETIVA} # remove uma configuração existente
 ```
 
 ## Configure editor
@@ -40,7 +42,7 @@ git config --global alias.subl "comando" # cria atalho para o comando
 Isto permitirá utilizar o atalho `subl` para abrir arquivos e incluir as mensagens de commit com o Sublime Text com o comando simples de commit
 
 ```sh
-subl nome_do_arquivo
+subl {FILE_NAME}
 git commit
 ```
 
@@ -83,16 +85,6 @@ git init
 git clone
 git status
 
-git log
-git log --oneline --graph
-git log --oneline --graph --all --decorate
-git log -p
-git shortlog
-git shortlog -sne
-git show SHA
-git stat
-git reflog # log de todos commits (inclui deletados)
-
 git remote -v # lista os remotos existentes
 git remote set-url nome_remoto(origin) novo_link # altera o link do remoto
 git remote rm # remove um repositorio remoto
@@ -103,22 +95,41 @@ git commit -m "messsage" # short message
 git commit -am "message" # commit all modified files in stage 
 git commit --amend    # modifica o ultimo commit
 
+gitk # abre a ferramenta GUI
+git log
+git log {FOLDER_NAME} # logs que possuam uma pasta específica
+git log {FILE_NAME} # logs que possuam um arquivo específico
+git log --oneline --graph
+git log --oneline --graph --all --decorate
+git log -p
+git shortlog
+git shortlog -sne
+git show SHA
+git stat
+git reflog # log de todos commits (inclui deletados)
+
 git stash # salva as mudanças do working directory
+git stash save "mensagem"  # salva atribuindo uma mensagem
 git stash list
 git stash apply
-git stash pop # aplica e remove o stash
+git stash pop # remove o ultimo elemento inserido
+git stash pop 1 # remove o lemento no index 1
 git stash drop # remove o ultimo stash adicionado
 git stash branch name # cria um branch, faz checkout e aplica stash
+git stash clear # limpa o stash
 
-git reset file # unstage arquivo
 git checkout -- file # desfaz alterações no arquivo
-git checkout HEAD~1 # aponta para o último commit
+git checkout HEAD~1 # aponta para o commit anterior
 
+git reset {FILE_NAME} # unstage arquivo
 git reset # remove do staged area e mantém alterações
 git reset --hard # remove do staged area e desfaz alterações
-git reset HEAD~1 # apaga um commit e mantém alterações
+git reset HEAD~1 # apaga um commit e retorna os arquivos pro working dir.
+git reset --soft HEAD~1 # apaga um commit e retorna os arquivos pro staging area
 git reset --hard HEAD~1 # apaga um commit e desfaz alterações
+git reset {SHA} # retonar para um commit desfazendo os posteriores
 
+git revert HEAD~1 # cria um novo commit que desfaz um commit
 git revert SHA # cria um novo commit que desfaz um determinado commit
 git rebase -i HEAD~4 # para realizar modificações nos commits
 
@@ -183,6 +194,8 @@ git config --system --unset credential.helper # remove configuração de credenc
 ## Guides
 
 [Git rebase](https://raphaelfabeni.com/git-alterando-commits-parte-1/)
+[Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+
 
 ## Git branching model
 
