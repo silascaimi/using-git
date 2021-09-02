@@ -105,7 +105,7 @@ git log -p
 git shortlog
 git shortlog -sne
 git show SHA
-git stat
+git stat # adiciona algumas informações ex.: arquivo | total linhas algerados
 git reflog # log de todos commits (inclui deletados)
 
 git stash # salva as mudanças do working directory
