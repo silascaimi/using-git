@@ -193,7 +193,7 @@ git config --system --unset credential.helper # remove configuração de credenc
 
 ## Guides
 
-[Git rebase](https://raphaelfabeni.com/git-alterando-commits-parte-1/)
+[Git rebase](https://raphaelfabeni.com/git-alterando-commits-parte-1/) 
 [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
 
 
