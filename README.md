@@ -25,7 +25,8 @@ git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.e
 ```
 ## Files
 
-Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`
+Baixar os arquivos `.bash_profile` `git-completion.bash` `git-prompt.sh` e colar na pasta raiz de usuário em `C:\Users\user_name`  
+Caso já exista o arquivo  `.bash_profile` copie o conteúdo e cole na parte inferior do arquivo existente
 
 ## Shortcut to Sublime
 
