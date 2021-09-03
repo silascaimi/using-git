@@ -16,6 +16,7 @@ git config --global # aplica configurações de usuário
 git config --system # aplica configurações para todos usuários
 
 git config --unset {DIRETIVA} # remove uma configuração existente
+git config --system core.longpaths true # corrige erro de limite de caminho do windows ao clonar
 ```
 
 ## Configure editor
@@ -102,11 +103,12 @@ git log {FOLDER_NAME} # logs que possuam uma pasta específica
 git log {FILE_NAME} # logs que possuam um arquivo específico
 git log --oneline --graph
 git log --oneline --graph --all --decorate
-git log -p
+git log -n {1} # exibe as mudanças de uma quantidade de commits específicada
+git log -p # analiza as mudanças realizadas nos commits
 git shortlog
 git shortlog -sne
 git show SHA
-git stat # adiciona algumas informações ex.: arquivo | total linhas algerados
+git stat # adiciona algumas informações ex.: arquivo | total linhas alterados
 git reflog # log de todos commits (inclui deletados)
 
 git stash # salva as mudanças do working directory
