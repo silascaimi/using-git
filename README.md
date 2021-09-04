@@ -183,11 +183,11 @@ git fetch origin master             # atualiza o repo local
 git pull                            # git fetch + git merge
 git pull --rebase                   # agrupa todas branchs em uma unica linha(indicado)
 
-ssh-keygen -t rsa -b 4096 -C "email"       # gera uma chave ssh
+ssh-keygen -t rsa -b 4096 -C {EMAIL}       # gera uma chave ssh - rsa ou ed25519
 eval `ssh-agent -s`                        # inicial o agent ssh em background
-ssh-add ~/.ssh/chave                       # adiciona chave ao agente
+ssh-add ~/.ssh/{CHAVE_NAME}                # adiciona chave gerada ao agente
 
-git config --system --unset credential.helper # remove configuração de credenciais armazenadas
+git config --system --unset credential.helper   # remove configuração de credenciais armazenadas
 ```
 
 ## Add-on
