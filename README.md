@@ -105,7 +105,7 @@ git log -p                          # exibe o diff de cada commit
 git log --author={AUTHOR}           # exibe os commits de um usuário especificado
 git shortlog
 git shortlog -sne
-git show SHA
+git show {SHA}            # exibe metadata e mudanças de conteúdo do commit
 git stat                  # adiciona algumas informações ex.: arquivo | total linhas alterados
 git reflog                # log de todos commits (inclui deletados)
 
