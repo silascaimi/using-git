@@ -97,10 +97,12 @@ gitk # abre a ferramenta GUI
 git log
 git log {FOLDER_NAME}               # logs que possuam uma pasta específica
 git log {FILE_NAME}                 # logs que possuam um arquivo específico
+git log -{NUMBER}                   # especifica a quantidade de commits exibidos no log
 git log --oneline --graph
 git log --oneline --graph --all --decorate
 git log -n {1}                      # exibe as mudanças de uma quantidade de commits específicada
-git log -p                          # analiza as mudanças realizadas nos commits
+git log -p                          # exibe o diff de cada commit
+git log --author={AUTHOR}           # exibe os commits de um usuário especificado
 git shortlog
 git shortlog -sne
 git show SHA
@@ -145,6 +147,7 @@ git rm -r file/folder    # remove arquivo/pasta do remoto
  
 git diff SHA1..SHA2
 git diff --cached        # staging area
+git diff HEAD            # exibe as diferenças entre o working directory commit
 
 git tag                  # exibe as tags
 git tag -a nome          # cria a tag com anotação
