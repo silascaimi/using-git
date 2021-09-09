@@ -111,9 +111,10 @@ git reflog                # log de todos commits (inclui deletados)
 
 git stash                 # salva as mudanças do working directory
 git stash save "mensagem" # salva atribuindo uma mensagem
+git stash push {FILE_1}   # adiciona arquivos específicos 
 git stash list
-git stash apply
-git stash pop              # remove o ultimo elemento inserido
+git stash apply            # aplica o stash mas mantém na pilha
+git stash pop              # aplica o stash e remove da pilha (último elemento inserido)
 git stash pop 1            # remove o lemento no index 1
 git stash drop             # remove o ultimo stash adicionado
 git stash branch name      # cria um branch, faz checkout e aplica stash
