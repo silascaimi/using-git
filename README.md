@@ -69,7 +69,7 @@ Entendendo a quebra de linhas [aqui](https://www.akitaonrails.com/2009/02/23/peq
 ```sh
 git init
 git remote add origin 'link do repositório'
-git branch --set-upstream master origin/master
+git branch --set-upstream-to=origin/master master
 git add .
 git commit -m "Initial files"
 git push -u origin master
