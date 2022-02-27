@@ -178,7 +178,10 @@ $ git checkout master
 $ git merge --no-ff feature/do-something
 
 git merge mergetool
-git cherry-pick SHA                 # adiciona um commit especifico ao branch
+git cherry-pick SHA                       # adiciona um commit especifico ao branch
+git cherry-pick SHA -e                    # edit message
+git cherry-pick SHA -x                    # add cherry picked message – “cherry picked from commit”
+git cherry-pick OldestSHA^..YoungestSHA   # adiciona intervalos de commits (^ include OldestSHA)
 
 git push
 git push origin branch              # envia branch para o remoto
