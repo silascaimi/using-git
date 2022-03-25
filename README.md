@@ -31,21 +31,21 @@ Caso já exista o arquivo  `.bash_profile` copie o conteúdo e cole na parte inf
 
 ## Shortcut to Sublime
 
-Abrir arquivo `.bash_profile` e adicionar a linha abaixo. 
+Executar o seguinte comando
 
-*`alias subl="'C:/Program Files/Sublime Text 3/sublime_text.exe'"`*
-
-Ou executar o comando
-
-```sh
-git config --global alias.subl "comando" # cria atalho para o comando
-```
+*`alias subl="'{SUBLIME_TEXT_PATH}'"`*
 
 Isto permitirá utilizar o atalho `subl` para abrir arquivos e incluir as mensagens de commit com o Sublime Text com o comando simples de commit
 
 ```sh
 subl {FILE_NAME}   # abrir arquivo no sublime text
 git commit
+```
+
+Para atalhos de comandos do git executar o comando
+
+```sh
+git config --global alias.{ALIAS_NAME} "{COMMAND}" # cria atalho para o comando
 ```
 
 ## Formatting
