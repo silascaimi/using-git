@@ -85,6 +85,7 @@ $ git branch --set-upstream-to master origin/master
 $ git init
 $ git clone
 $ git status
+$ git status -u          # Exibe arquivos individualmente
 
 $ git remote -v                                 # lista os remotos existentes
 $ git remote set-url {NOME_REMOTO} {LINK}       # altera o link do remoto
