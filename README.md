@@ -76,7 +76,6 @@ $ git branch --set-upstream-to=origin/master master
 $ git add .
 $ git commit -m "Initial files"
 $ git push -u origin master
-$ git branch --set-upstream-to master origin/master
 ```
 
 ## Main Comands
