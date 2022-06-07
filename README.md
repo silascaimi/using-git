@@ -193,6 +193,8 @@ $ git fetch origin master             # atualiza o repo local
 $ git pull                            # git fetch + git merge
 $ git pull --rebase                   # agrupa todas branchs em uma unica linha(indicado)
 
+$ git rm --cached <nomedoarquivo>     # ignorar arquivos monitorados
+
 $ ssh-keygen -t rsa -b 4096 -C {EMAIL}       # gera uma chave ssh - rsa ou ed25519
 $ eval `ssh-agent -s`                        # inicial o agent ssh em background
 $ ssh-add ~/.ssh/{CHAVE_NAME}                # adiciona chave gerada ao agente
