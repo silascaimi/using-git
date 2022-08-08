@@ -206,11 +206,19 @@ $ git config --system --unset credential.helper   # remove configuração de cre
 
 Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixar e usar para visualizar arquivos de markdown no computador.
 
+## Tolls
+
+[Hound](https://houndci.com/) Automated code review for GitHub pull requests  
+[Choosealicense](https://choosealicense.com/) Choose an open source license  
+[Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)  
+[Dillinger](https://dillinger.io/) Markdown Editor
+
 ## Guides
 
 [Git rebase](https://raphaelfabeni.com/git-alterando-commits-parte-1/)  
-[Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
-
+[Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)  
+[Versionamento Semântico](https://semver.org/lang/pt-BR/)  
+[CommonMark](https://commonmark.org/) Uma especificação fortemente definida e altamente compatível do Markdown  
 
 ## Git branching model
 
