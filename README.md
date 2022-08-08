@@ -211,7 +211,8 @@ Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixa
 [Hound](https://houndci.com/) Automated code review for GitHub pull requests  
 [Choosealicense](https://choosealicense.com/) Choose an open source license  
 [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)  
-[Dillinger](https://dillinger.io/) Markdown Editor
+[Dillinger](https://dillinger.io/) Markdown Editor  
+[Shields](https://shields.io/)  
 
 ## Guides
 
