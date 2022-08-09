@@ -218,6 +218,7 @@ Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixa
 
 [Git rebase](https://raphaelfabeni.com/git-alterando-commits-parte-1/)  
 [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)  
+[Udacity Git Commit Message Style Guide](http://udacity.github.io/git-styleguide/)  
 [Versionamento Semântico](https://semver.org/lang/pt-BR/)  
 [CommonMark](https://commonmark.org/) Uma especificação fortemente definida e altamente compatível do Markdown  
 
