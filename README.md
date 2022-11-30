@@ -221,6 +221,7 @@ Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixa
 [Udacity Git Commit Message Style Guide](http://udacity.github.io/git-styleguide/)  
 [Versionamento Semântico](https://semver.org/lang/pt-BR/)  
 [CommonMark](https://commonmark.org/) Uma especificação fortemente definida e altamente compatível do Markdown  
+[Markdown Guide](https://www.markdownguide.org/basic-syntax)  
 
 ## Git branching model
 
