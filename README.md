@@ -222,13 +222,4 @@ Há um [plugin](https://packagecontrol.io/installation#st3) que você pode baixa
 [Versionamento Semântico](https://semver.org/lang/pt-BR/)  
 [CommonMark](https://commonmark.org/) Uma especificação fortemente definida e altamente compatível do Markdown  
 [Markdown Guide](https://www.markdownguide.org/basic-syntax)  
-
-## Git branching model
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/9321996/88289855-41f21400-cccc-11ea-910a-7405624c3545.png" width="50%">
-</p>
-
-Author: Vincent Driessen
-Original blog post: http://nvie.com/posts/a-successful-git-branching-model
-License: Creative Commons BY-SA
+[Gitlab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)  
