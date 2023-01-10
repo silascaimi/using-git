@@ -91,6 +91,7 @@ $ git remote set-url {NOME_REMOTO} {LINK}       # altera o link do remoto
 $ git remote rm                                 # remove um repositorio remoto
 
 $ git add {FILE_1} {FILE_2} {FILE_N}
+$ git add -p {FILE}                   # permite adicionar parte de um arquivo
 $ git commit
 $ git commit -m "messsage"            # short message
 $ git commit -am "message"            # commit all modified files in stage 
@@ -180,7 +181,7 @@ $ git rebase master
 $ git checkout master
 $ git merge --no-ff feature/do-something
 
-git merge mergetool
+git mergetool                             # abre a ferramenta de solução de conflitos
 git cherry-pick SHA                       # adiciona um commit especifico ao branch
 git cherry-pick SHA -e                    # edit message
 git cherry-pick SHA -x                    # add cherry picked message – “cherry picked from commit”
