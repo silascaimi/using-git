@@ -171,6 +171,7 @@ $ git checkout nome
 $ git branch -r                      # lista branch no remoto
 $ git checkout -b nome_do_branch_local origin/nome_do_branch_remoto          # baixar branch remoto
 $ git branch --set-upstream-to=origin/<branch> <local_branch> # tracking remote branch com local branch
+$ git push origin :nome-antigo novo-nome # renomear branch remoto 
 $ git push origin :branch_name       # deleta o branch no remoto
 
 ## Processo de merge
